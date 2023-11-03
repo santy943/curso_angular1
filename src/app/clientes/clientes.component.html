@@ -1,0 +1,18 @@
+<table class="table-auto w-full border-collapse">
+    <thead>
+      <tr class="bg-gray-800 text-white">
+        <th class="px-4 py-2">#</th>
+        <th class="px-4 py-2">Nombre</th>
+        <th class="px-4 py-2">Apellido</th>
+        <th class="px-4 py-2">Correo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientes" class="hover:bg-gray-200 transition-colors">
+        <td class="border px-4 py-2">{{cliente.id}}</td>
+        <td class="border px-4 py-2">{{cliente.name}}</td>
+        <td class="border px-4 py-2">{{cliente.lastName}}</td>
+        <td class="border px-4 py-2">{{cliente.email}}</td>
+      </tr>
+    </tbody>
+  </table>
